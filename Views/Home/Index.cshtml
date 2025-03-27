@@ -1,0 +1,12 @@
+﻿@model List<RTAUI.Models.Product>
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>AI Generated Products</h2>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li><b>@product.Name</b>: @product.Description - <b>Rs. @product.Price</b></li>
+    }
+</ul>
